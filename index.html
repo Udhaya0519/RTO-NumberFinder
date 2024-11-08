@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTO NumberFinder</title>
+
+    <!-- linking css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- linking font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+
+    <main>
+        <section class="search-section">
+            <h1 class="heading">
+                RTO Finder
+            </h1>
+            <div class="search-container">
+                <div class="icon-wrapper">
+                    <i id="search-icon" class="fa-solid fa-lg fa-magnifying-glass" style="color: gray;" ></i>
+                </div>
+                <input class="search-input" maxlength="12" type="text">
+            </div>
+
+        </section>
+        <section class="result-section">
+            <div class="result-section-wrapper" >
+
+                <h4>Your Search : <span class="query-code"></span></h4>
+                <table class="result-table" border="1" hidden >
+                    <tbody>
+                        <tr>
+                            <td>Code</td>
+                            <td id="code">TN 10</td>
+                        </tr>
+                        <tr>
+                            <td>location</td>
+                            <td id="location">Chennai North</td>
+                        </tr>
+                        <tr>
+                            <td>Type</td>
+                            <td id="type">RTO</td>
+                        </tr>
+                        <tr>
+                            <td>District</td>
+                            <td id="district">Chennai</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="no-result-popup">
+                    <h2>No Results Found!</h2>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    
+
+
+
+
+
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/data.js"></script>
+</body>
+</html>
